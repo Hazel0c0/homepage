@@ -1,36 +1,40 @@
 @import url('../common.css');
 
-hr {
-  background: lightgray;
-  width: 100%;
-  height: 10px;
-}
-
 /* ----------- 공통 ------------ */
-* {
-  /* border-radius: 10px; */
+.wrap {
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-size: 16px;
+  font-weight: 700;
+  /* font-family: 'Noto Sans',sans-serif; */
 }
 
 h2 {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 32px;
+  margin-bottom: 40px;
 }
 
 h3 {
-  font-size: 1.1em;
+  font-size: 24px;
+  line-height: 32px;
 }
 
-button {
-  border-radius: 20px;
-  padding: 8px 15px;
+/* box radius */
+.radius>* {
+  border-radius: 10px;
+}
+
+.button {
+  border-radius: 50px;
+  padding: 10px 30px;
   background: palevioletred;
   color: white;
-
-}
-
-.bold {
-  /* slide, main  기본 볼드체로 지정함 */
+  font-size: 16px;
   font-weight: 700;
+  display: block;
+  margin: 0 auto;
 }
 
 
@@ -43,11 +47,12 @@ button {
   background-position: center;
   position: relative;
 }
+
 .slide .what {
   /* background: #f3cbe95b; */
   width: 75%;
   /* height: 80%; */
-  margin:  auto;
+  margin: auto;
   padding: 50px 0;
 }
 
@@ -60,8 +65,9 @@ button {
   /* background: lightgoldenrodyellow; */
   margin-top: 30px;
   width: 50%;
-  font-size: 1.3em;
+  font-size: 24px;
 }
+
 .slide .notice {
   background: rgba(0, 0, 0, 0.301);
   color: white;
@@ -70,17 +76,19 @@ button {
   position: absolute;
   bottom: 0px;
 }
+
 .slide .notice .new {
   /* background: pink; */
   width: 50%;
   display: flex;
 
   position: absolute;
-  
+
   left: 50%;
   transform: translate(-50%, 0);
-  
+
 }
+
 .slide .notice .new .title {
   border-right: 1px solid white;
   height: fit-content;
@@ -89,6 +97,7 @@ button {
 
   margin-top: 26px;
 }
+
 .slide .notice .new .news {
   font-size: 15px;
   padding: 2px 10px;
@@ -98,54 +107,66 @@ button {
 
 
 /* ----------- main ------------ */
-
-/* search */
-main>* {
+main {
+  /* background: rgba(211, 211, 211, 0.322); */
   width: 1380px;
-  margin: 40px auto;
-  border: 1px solid palevioletred;
+  margin: 0 auto;
+  /* border: 1px solid palevioletred; */
+  background-size: cover;
 }
 
+main>* {
+  margin: 50px 0 50px;
+}
+
+/* search */
 main .search {
+  /* background: rgba(255, 182, 193, 0.336); */
   max-width: 850px;
   height: 65px;
   border: 2px solid red;
   border-radius: 50px;
-  padding:18px 64px;
+  margin: 40px auto;
 }
 
 main .search input {
   border: none;
-  background: none;
-  font-size: 20px;
   outline: none;
+  font-size: 16px;
+  width: 650px;
+  margin: 20px 70px 20px 35px;
+  float: left;
 }
+
 main .search input:active {
   border: none;
 }
+
 main .search button {
   float: right;
 
-  background: url("	https://www.lge.co.kr/lg5-common/images/icons/icon-search-20.svg");
-  background-repeat: no-repeat;
+  background: none;
   border: none;
-  height: 20px;
-  width: 20px;
+  padding: 20px;
+  cursor: pointer;
 }
 
 /* --end search */
 
 
 /* menu */
+main section {
+  width: 100%;
+  /* background-color: lightcoral; */
 
-main section ul {
-  float: left;
-  width: 28%;
-  margin-right: 5%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0;
 }
 
-main section:last-child {
-  margin-right: 0;
+main section ul {
+  width: 25%;
+  /* background: lightgoldenrodyellow; */
 }
 
 main section ul .img {
@@ -160,15 +181,6 @@ main section ul .img {
   padding-top: 25px;
 }
 
-main section ul .img img {
-  /* background: lightcoral; */
-
-  /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-}
-
 main section ul h2 {
   font-size: 1.5em;
   margin: 10px;
@@ -178,6 +190,10 @@ main section ul li {
   border-bottom: 1px solid lightgray;
   /* margin: 10px; */
   padding: 20px;
+}
+
+main section ul li a {
+  font-size: 20px;
 }
 
 main section ul li a::after {
@@ -190,12 +206,46 @@ main section ul li a::after {
 
 
 /* recommend */
-main .recommend .box{
-  display: flex;
-  justify-content: space-between;
+main .recommend {
+  /* background: rgba(240, 128, 128, 0.253); */
 }
 
-main .recommend .box>* {
+main .recommend form.sub .check input {
+  float: left;
+}
+
+/* .check input label::after {
+  background-image: url("https://www.lge.co.kr/lg5-common/images/icons/btn-checkbox-off-48.svg");
+}
+
+.check input label::after {
+  content: ' ';
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background: no-repeat center center;
+  background-size: 100%;
+} */
+
+main .recommend form.sub .button {
+  float: right;
+}
+
+main .recommend .button {
+  background: none;
+  color: black;
+  border-width: 1px;
+}
+
+main .recommend .boxes {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+main .recommend .boxes>.box {
   /* width: 30%; */
   height: 200px;
 
@@ -203,13 +253,9 @@ main .recommend .box>* {
   /* * */
   margin: 0 10px;
 
-  /* 작은창 */
-  /* margin: 20px auto; */
-  background: lightyellow;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 15%);
   padding: 30px;
-
 }
-
 
 /* -- end recommend */
 
@@ -217,38 +263,57 @@ main .recommend .box>* {
 
 /* input 입력창 */
 main .input>* {
-  background: lightgray;
-  padding: 30px;
+  background: rgb(238, 238, 238);
+  padding: 50px;
   float: left;
   width: 49%;
 }
-
-/* * */
-form label {
-  border: 5px solid #cef892;
+main .input {
+  display: flex;
+  justify-content: space-between;
 }
-
-main .input .reservation {
-  margin-right: 2%;
-  position: relative;
+/* -------공통-------- */
+main .input .title {
+  background-color: /lightpink;
+  border-bottom: 2px solid black;
 }
-
-main .input .reservation form label input {
+main .input input {
   display: block;
+  width: 280px;
+  height: 45px;
+  font-size: 15px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  outline: none;
+  padding-left: 10px;
+  background-color: white;
+}
+main .input .title h2 {
+  font-size: 28px;
+  float: left;
+  padding-bottom: 10px;
+}
+main .input label {
+  /* background: lightseagreen; */
+  display: block;
+  margin-top: 30px;
 }
 
-main .input .reservation form .addr {
-  border: 5px solid lightpink;
-  /* width: 100%; */
-}
-
-main .input .reservation .but-mini {
+/* reservation */
+main .input .reservation .title .but-mini {
   background-color: black;
-  font-size: 0.5em;
+  font-size: 14px;
   padding: 6px 8px;
-  position: absolute;
-  top: 30px;
-  right: 30px;
+  float: right;
+}
+main .input .reservation .name {
+  float: left;
+}
+main .input .reservation .phone {
+  float: right;
+}
+main .input .reservation .addr {
+  display: inline-block;
 }
 
 /* --end input 입력창 */
@@ -256,12 +321,12 @@ main .input .reservation .but-mini {
 
 
 /* service */
-main .service .box {
+main .service .boxes {
   display: flex;
   justify-content: space-between;
 }
 
-main .service .box>* {
+main .service .boxes>* {
   width: 23%;
   height: 200px;
 
@@ -280,39 +345,92 @@ main .service .box>* {
   position: relative;
 }
 
-main .service .box span {
+main .service .boxes span {
   position: absolute;
   bottom: 30px;
 }
 
-main .service .box .box1 {
+main .service .boxes .box1 {
   background: url('https://www.lge.co.kr/kr/dcr/images/support/main-banner/menu/home_service_banner_03_220825.png');
 }
 
-main .service .box .box2 {
+main .service .boxes .box2 {
   background: url('https://www.lge.co.kr/kr/dcr/images/support/main-banner/menu/home_service_banner_02.jpg')
 }
 
-main .service .box .box3 {
+main .service .boxes .box3 {
   background: url('https://www.lge.co.kr/kr/dcr/images/support/main-banner/menu/home_service_banner_03.jpg')
 }
 
-main .service .box .box4 {
+main .service .boxes .box4 {
   background: url('https://www.lge.co.kr/kr/dcr/images/support/main-banner/menu/home_service_banner_04.jpg')
 }
 
 
-/* ---------infor, etc box */
-main .infor .box>*,
-main .etc .box>* {
-  width: 30%;
-  height: 100px;
-
-  float: left;
-  margin-right: 10px;
-
-  background: rgba(255, 160, 122, 0.5);
+/* ---------infor, etc  공통----- */
+.infor .boxes {
+  display: flex;
 }
 
-main
+/* infor box */
+main .infor .boxes {
+  justify-content: space-between;
+}
+
+main .infor .boxes .box {
+  width: 445px;
+  height: 200px;
+  background-size: cover;
+  position: relative;
+}
+
+main .infor .boxes .box .text {
+  position: absolute;
+  top: 35px;
+  left: 32px;
+}
+
+/*  단축속성 (주의)  기본값 auto라서 부모요소 cover 덮힘 ㅜㅜ */
+main .infor .boxes .box1 {
+  background-image: url('https://www.lge.co.kr/kr/support/images/notice/notice_selfcheck_banner_230303.jpg');
+}
+
+main .infor .boxes .box2 {
+  background-image: url('https://www.lge.co.kr/kr/dcr/images/support/main-banner/banner/A9_information_220901.jpg');
+}
+
+main .infor .boxes .box3 {
+  background-image: url('https://www.lge.co.kr/kr/dcr/images/support/main-banner/banner/home_information_banner_02_220117.png');
+}
+
+
+/* etc box */
+main .etc .boxes {
+  display: flex;
+  justify-content: space-around;
+}
+
+main .etc .boxes .box {
+  /* background: olive; */
+  width: 32%;
+  height: 100px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 15%);
+
+  /* 컨텐츠 중앙정렬 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .etc .boxes .box .logo {
+  /* background: lightgreen; */
+
+}
+
+main .etc .boxes .box .name {
+  background: rgba(250, 250, 210, 0.397);
+  margin-left: 20px;
+  font-size: 16px;
+}
+
 /* --end service */
