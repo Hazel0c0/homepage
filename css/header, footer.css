@@ -1,0 +1,356 @@
+/* header style */
+header {
+    border-bottom: 1px solid #ddd;
+}
+header .inner-box {
+    width: 92%;
+    margin: 0 auto;
+}
+
+/* header 첫째 줄 */
+header .inner-box>div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+header .inner-box div .tnb {
+    display: flex;
+    align-items: center;
+}
+header .inner-box div .tnb ul,
+header .inner-box div .tnb .introduction {
+    border-right: 1px solid #bbb;
+}
+header .inner-box div .tnb ul {
+    display: flex;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+header .inner-box div .tnb ul li {
+    margin-right: 30px;
+}
+
+header .inner-box div .tnb .introduction {
+    padding: 0 30px;
+}
+
+header .inner-box div .tnb .b2b {
+    padding: 0 30px;
+}
+
+header .inner-box div .tnb .b2b a {
+    display: inline-block;
+    background: url("https://www.lge.co.kr/lg5-common/images/icons/btn-outlink-16.svg") no-repeat right top;
+    width: 50px;
+}
+
+/* header 둘째 줄 */
+header .inner-box div .gnb {
+    display: flex;
+    align-items: center;
+}
+header .inner-box div .gnb .normal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+header .inner-box div .gnb .normal li {
+    margin-right: 30px;
+}
+
+header .inner-box div .gnb .normal li:first-child {
+    width: 95.73px;
+}
+
+header .inner-box div .gnb .normal li:nth-child(2) {
+    width: 70.41px;
+}
+
+header .inner-box div .gnb .normal li:nth-child(3) {
+    width: 78.14px;
+}
+
+header .inner-box div .gnb .normal li:nth-child(4) {
+    width: 113.33px;
+}
+
+header .inner-box div .gnb .normal li:nth-child(5) {
+    width: 52.81px;
+}
+
+header .inner-box div .gnb .normal li:nth-child(6) {
+    width: 70.41px;
+}
+
+header .inner-box div .gnb .normal li a {
+    display: block;
+}
+
+header .inner-box div .gnb .normal li>* {
+    padding: 20px 0;
+    border-bottom: 5px solid transparent;
+}
+
+
+
+header .inner-box div .gnb .normal .dropdown {
+    display: inline-block;
+    /* position: relative; */
+}
+
+header .inner-box div .gnb .normal .dropdown:hover {
+    font-weight: 700;
+    border-bottom: 5px solid #000;
+}
+
+
+
+header {
+    position: relative;
+}
+header .inner-box div .gnb .normal .dropdown .dropdown-content {
+    display: none;
+    height: 90px;
+    background: white;
+    
+    position: absolute;
+    top: 134px;
+    left: 0;
+    width: 100vw;
+    /* left: -80px; */
+
+    border-bottom: 1px solid #ddd;
+    
+    
+    line-height: 90px;
+}
+
+header .inner-box div .gnb .normal .dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 10;
+}
+header .inner-box div .gnb .normal .dropdown:hover .dropdown-content .ablock{
+    width: 96px;
+    height: inherit;
+    margin-left: 80px;
+}
+header .inner-box div .gnb .normal .dropdown .dropdown-content a{
+    width: 100%;
+    text-align: center;
+}
+header .inner-box div .gnb .normal .dropdown .dropdown-content a#selcetTV1{
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header .inner-box div .gnb .special {
+    margin-bottom: 5px;
+    display: flex;
+    background: #f6f6f6;
+    padding: 7px 20px;
+    border-radius: 20px;
+}
+
+header .inner-box div .gnb .special li {
+    margin-right: 20px;
+}
+
+header .inner-box div .gnb .special li:last-child {
+    margin-right: 0;
+}
+
+/* dropdown-menu 는 나중에 추가할 예정 */
+
+/* footer style */
+footer {
+    background: #f4f4f4;
+    font-size: 0.8em;
+    line-height: 1.4;
+}
+footer .foot-container {
+    width: 1270px;
+    margin: 0 auto;
+}
+
+footer .foot-container>div {
+    margin-bottom: 0.8em;
+}
+
+/* footer 첫째 줄 */
+footer .foot-container .first-foot-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+footer .foot-container .first-foot-line .lang {
+    cursor: pointer;
+    width: 80px;
+    position: relative;
+    font-weight: 700;
+}
+/* 
+    after 가상 선택자를 사용한 이유는 클릭했을 때 돌아가게 하기 위해서인데
+    js 를 사용하지 않고 구현하려면 check-box를 사용해야 하므로 구조만 잡아둠.
+*/
+footer .foot-container .first-foot-line .lang::after {
+    content: "";
+    background: url("https://www.lge.co.kr/lg5-common/images/icons/btn-down-16-black.svg") no-repeat right center;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    right: -5px;
+}
+footer .foot-container .first-foot-line nav ul {
+    display: flex;
+    align-items: center;
+}
+
+footer .foot-container .first-foot-line nav ul li {
+    margin-right: 50px;
+}
+
+footer .foot-container .first-foot-line nav ul li:last-child {
+    margin-right: 0;
+}
+
+footer .foot-container .first-foot-line nav ul li a {
+    line-height: 1.2;
+    position: relative;
+}
+footer .foot-container .first-foot-line nav ul li:first-child a::before {
+    content: "";
+    background: url("https://www.lge.co.kr/lg5-common/images/icons/icon-sns1.svg");
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: -32px;
+    top: -9px;
+}
+footer .foot-container .first-foot-line nav ul li:nth-child(2) a::before {
+    content: "";
+    background: url("https://www.lge.co.kr/lg5-common/images/icons/icon-sns2.svg");
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: -32px;
+    top: -9px;
+}
+footer .foot-container .first-foot-line nav ul li:nth-child(3) a::before {
+    content: "";
+    background: url("https://www.lge.co.kr/lg5-common/images/icons/icon-sns3.svg");
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: -32px;
+    top: -9px;
+}
+footer .foot-container .first-foot-line nav ul li:nth-child(4) a::before {
+    content: "";
+    background: url("https://www.lge.co.kr/lg5-common/images/icons/icon-sns5.svg");
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: -32px;
+    top: -1px;
+}
+footer .foot-container .first-foot-line nav ul li:nth-child(5) a::before {
+    content: "";
+    background: url("https://www.lge.co.kr/lg5-common/images/icons/icon-sns1.svg");
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: -32px;
+    top: -2px;
+}
+footer .foot-container .first-foot-line nav ul li:nth-child(6) a::before {
+    content: "";
+    background: url("https://www.lge.co.kr/lg5-common/images/icons/icon-sns4.svg");
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: -32px;
+    top: -7px;
+}
+
+/* footer 둘째 줄 */
+footer .foot-container .second-foot-line nav ul {
+    display: flex;
+}
+
+footer .foot-container .second-foot-line nav ul li {
+    margin-right: 10px;
+}
+
+footer .foot-container .second-foot-line nav ul li .bold {
+    font-weight: 700;
+}
+
+footer .foot-container .second-foot-line nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* footer 셋째 줄 이후 공통 */
+footer .foot-container div:nth-child(n + 3) {
+    display: flex;
+    color: #888;
+}
+
+/* footer 셋째 줄 */
+footer .foot-container .third-foot-line div {
+    padding: 0 10px;
+    border-right: 1px solid #bbb;
+}
+
+footer .foot-container .third-foot-line div:first-child {
+    padding-left: 0;
+}
+
+footer .foot-container .third-foot-line div:last-child {
+    border: none;
+}
+
+footer .foot-container .third-foot-line span {
+    color: #000;
+}
+
+/* footer 넷째 줄 */
+footer .foot-container .fourth-foot-line div {
+    margin-right: 15px;
+}
+footer .foot-container .fourth-foot-line div:nth-child(3) {
+    background: #888;
+    color: #f4f4f4;
+    font-weight: 700;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+/* footer 마지막 줄 */
+footer .foot-container>div:last-child {
+    padding-bottom: 50px;
+    margin: 0;
+}

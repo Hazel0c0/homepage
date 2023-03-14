@@ -1,0 +1,411 @@
+/* .slide style */
+.slide {
+    background: url("https://www.lge.co.kr/kr/home-main-hero/2023-mar/lifeup/HERO-Banner_PC_LGlifeUP_0228_06.jpg")
+    no-repeat center / cover;
+    height: 70vh;
+}
+.slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.slide a div:first-child {
+    align-self: center;
+}
+.slide a div:first-child h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.slide a div:first-child p {
+    font-size: 23px;
+    color: #666;
+}
+.slide a div:nth-child(2) {
+    text-align: right;
+    font-size: 20px;
+    line-height: 46px;
+    background: rgba(100, 100, 100, 0.5);
+    margin-left: 45%;
+    padding: 0 30px;
+    color: #fff;
+    border-radius: 30px;
+}
+
+/* 이후 section, .main 공통 */
+section
+, .main {
+    padding: 0 8%;
+}
+section:nth-child(even) {
+    background: #eee;
+}
+
+/* div.main style */
+.main .nav1 {
+    text-align: center;
+    line-height: 1.4;
+    padding: 50px;
+    font-weight: 700;
+}
+.main .nav1 ul {
+    display: flex;
+    justify-content: space-between;
+}
+.main .nav1 ul li a img {
+    display: block;
+    background: #eee;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.main .nav2 {
+    margin-bottom: 50px;
+}
+.main .nav2 ul li {
+    margin-bottom: 30px;
+}
+.main .nav2 ul li {
+    padding: 50px 80px;
+    border-radius: 20px;
+}
+.main .nav2 ul li a h2 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.main .nav2 ul li a p {
+    color: #666;
+}
+.main .nav2 ul li:first-child {
+    background: url("https://www.lge.co.kr/kr/images/livecommerce/2023/20230315-tv/02_01_main-home_basic_pc.jpg") 
+    no-repeat center / cover;
+}
+.main .nav2 ul li:nth-child(2) {
+    background: url("https://www.lge.co.kr/kr/home-main-event/2023-mar/Quick-Menu-banner_LGlifeUP_0228---02.jpg") 
+    no-repeat center / cover;
+}
+.main .nav2 ul li:last-child {
+    background: url("https://www.lge.co.kr/kr/home-main-event/2023-fev/Quick-Menu-banner_0216.jpg") 
+    no-repeat center / cover;
+}
+
+/* section .title common style */ 
+section .title h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+section .title p {
+    font-size: 20px;
+    color:#777;
+    margin-bottom: 20px;
+}
+
+/* .product-list common style */
+.product-list {
+    display: flex;
+    justify-content: space-between;
+}
+.product-list li {
+    padding: 20px 40px;
+    background: #fff;
+    border-radius: 20px;
+    
+    display: flex;
+    flex-direction: column;
+}
+.product-list h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.product-list p {
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 20px;
+}
+.product-list div:last-child {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.product-list li img {
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+/* section.best style */
+.best .title {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    margin-bottom: 30px;
+}
+
+.best div nav ul {
+    display: flex;
+    margin-bottom: 30px;
+}
+.best div nav ul li {
+    background: #ddd;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.best div nav ul li:first-child {
+    background: #000;
+    color: #fff;
+}
+
+.best .ranking {
+    padding-bottom: 100px;
+}
+.best .ranking .product-list li {
+    width: 30%;
+    position: relative;
+    cursor: pointer;
+}
+.best .ranking .product-list li div:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: red;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+/* .recommend style */
+.recommend .title {
+    padding-top: 100px;
+}
+.recommend .product-list li {
+    width: 24%;
+    background: #eee;
+}
+.recommend .product-list a {
+    display: block;
+}
+/* 이미지 배경 투명하게 하는법을 몰라서 배경 지워주는 사이트에서 지웠는데
+오른쪽 위에 8K까지 지워짐... */
+.recommend .product-list li a img {
+    width: 100%;
+    border-bottom: 2px solid #ddd;
+}
+.recommend .spring-sand {
+    margin-bottom: 100px;
+}
+.recommend .spring-sand .title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.recommend .spring-sand .title div a {
+    color: #777;
+}
+.recommend .spring-sand .product-list {
+    display: flex;
+    justify-content: space-between;
+}
+.recommend .spring-sand .product-list > div {
+    width: 49%;
+    cursor: pointer;
+}
+.recommend .spring-sand .product-list > div:first-child
+, .recommend .spring-sand .product-list > div:last-child > div {
+    border-radius: 20px;
+    box-shadow: 0 0 10px #ddd;
+    overflow: hidden;
+}
+.recommend .spring-sand .product-list > div:first-child img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.recommend .spring-sand .product-list > div:first-child *:nth-child(n + 2) {
+    padding-left: 30px;
+}
+.recommend .spring-sand .product-list > div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+.recommend .spring-sand .product-list > div:last-child > div {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 0;
+    align-items: center;
+    height: 48%;
+}
+.recommend .spring-sand .product-list > div:last-child > div img {
+    height: 50%;
+}
+.recommend .spring-sand .product-list > div:last-child > div p {
+    font-weight: normal;
+}
+
+.recommend .house-elec .card-list {
+    margin-bottom: 100px;
+}
+.recommend .house-elec .card-list ul li {
+    width: 20%;
+}
+
+/* card-list common style */
+.card-list ul {
+    display: flex;
+}
+.card-list ul li {
+    overflow: hidden;
+    margin-right: 30px;
+}
+.card-list ul li a img {
+    width: 100%;
+    border-radius: 20px;
+}
+.card-list ul li a div {
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* section.latest style */
+.latest {
+    position: relative;
+    padding-bottom: 100px;
+}
+.latest > div {
+    display: flex;
+    padding-top: 80px;
+}
+.latest .title {
+    flex: 1;
+    padding: 50px;
+}
+.latest .card-list {
+    flex: 3;
+}
+.latest .card-list ul li div {
+    line-height: 1.4;
+
+    padding-left: 10px;
+}
+.latest .nav-button {
+    width: fit-content;
+    position: absolute;
+    bottom: 80px;
+    left: 59%;
+}
+.latest .nav-button button {
+    display: block;
+    margin-right: 10px;
+    border: none;
+}
+.latest .nav-button button:first-child {
+    width: 30px;
+    height: 10px;
+    background: #444;
+    border-radius: 20px;
+}
+.latest .nav-button button:nth-child(n + 2) {
+    border-radius: 50%;
+    background: #ccc;
+}
+
+/* next-button common style */
+.card-list ul .next-button {
+    position: relative;
+    overflow: visible;
+}
+.card-list ul .next-button::after {
+    font-size: 30px;
+    content: ">";
+    position: absolute;
+    top: 36%;
+    right: 0;
+    transform: translate(50%, 0);
+    width: 50px;
+    height: 50px;
+    background: #fff;
+
+    text-align: center;
+    line-height: 40px;
+    
+    border-radius: 50%;
+    box-shadow: 0 0 5px #ccc;
+}
+
+/* section.smart style */
+.smart {
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.smart .title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.smart .card-list {
+    margin-bottom: 100px;
+}
+.smart .card-list ul {
+    justify-content: space-between;
+}
+.smart .card-list ul li {
+    width: 23%;
+}
+.smart .card-list ul li img {
+    margin-bottom: 15px;
+}
+.smart .card-list ul li p {
+    font-weight: 700;
+    color: #777;
+}
+
+.smart .house-banner {
+    border-radius: 30px;
+    padding: 60px 100px;
+    cursor: pointer;
+}
+.smart .house-banner1 {
+    background: url("https://www.lge.co.kr/kr/dcr/images/main/main-home/img-story-banner-thinq-pc_0722.jpg")
+    no-repeat center / cover;
+    margin-bottom: 30px;
+}
+.smart .house-banner2 {
+    background: url("https://www.lge.co.kr/kr/dcr/images/main/main-home/img-story-banner-up-pc_0722.jpg")
+    no-repeat center / cover;
+    margin-bottom: 100px;
+}
+.smart .house-banner .title {
+    flex-direction: column;
+}
+
+.smart .card-list ul li {
+    width: 30%;
+}
+.smart .card-list ul li div {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+/* section.guide style */
+.guide {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+}
